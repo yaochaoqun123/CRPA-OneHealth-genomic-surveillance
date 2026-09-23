@@ -38,4 +38,4 @@ SAMPLES=$(cut -f1 "$core_info" | paste -sd " " -)
 snippy-core --ref "$reference" $SAMPLES
 snippy-clean_full_aln core.full.aln > clean.full.aln
 run_gubbins.py --threads 16 -v -t fasttree -p gubbins clean.full.aln
-snp-sites -c gubbins.filtered_polymorphic_sites.fasta > coreSNP.rmnovelST.aln
+snp-sites -c gubbins.filtered_polymorphic_sites.fasta > coreSNP.aln
