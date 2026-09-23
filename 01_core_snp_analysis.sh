@@ -32,10 +32,7 @@ echo "$prefix step1 done!"
 
 # ==================== Step 2：核心 SNP 与去重组分析 ====================
 
-core_info="info.rmnovel.txt"
-
-mkdir -p rmNovelST
-cd rmNovelST
+core_info="info.txt"
 
 SAMPLES=$(cut -f1 "$core_info" | paste -sd " " -)
 snippy-core --ref "$reference" $SAMPLES
